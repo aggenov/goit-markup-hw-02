@@ -1,11 +1,17 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    background-color: #FFFFFF;
+    color: #434455;
+    letter-spacing: 0.02em;
 }
 
 ul {
     list-style: none;
+}
+
+.navigation {
+    background-color;: #FFFFFF
 }
 
 .logo {
@@ -42,6 +48,13 @@ ul {
     text-decoration: none;
 }
 
+.navigation .nav:focus,
+.navigation .nav:hover,
+.navigation .addres:hover,
+.navigation .addres:focus {
+    color: #4D5AE5;
+}
+
 .hero {
     background-color: #2E2F42;
 }
@@ -52,26 +65,69 @@ ul {
     line-height: 1.08;
     color: #FFFFFF;
     text-transform: capitalize;
+    width: 492px;
+    height: 120px;
+    text-align: center;
+
 }
 
 .button-hero {
-    background: #4D5AE5;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    display: flex;
+    align-items: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.19;
     padding: 16px 32px;
-    /* display: flex; */
-    /* align-items: center; */
-    color: #FFFFFF;
+    color: #FFFFFF;    
 }
+
+.button-hero:focus,
+.button-hero:hover {
+    background-color:#434455;
+    color: #4D5AE5;
+}
+
+
+/* section Feature */
+.feature {
+    background-color: #FFFFFF;
+}
+
+.feature-list {
+display: flex;
+}
+
+.feature-item {
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/* hidden text */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 
 .text-section {
     font-weight: 600;
     font-size: 36px;
     line-height: 1.11;
-    /* text-align: center; */
+    text-align: center;
     text-transform: capitalize;
     color: #2E2F42;
 }
@@ -83,6 +139,52 @@ ul {
     color: #2E2F42;
     text-transform: capitalize;
 }
+
+.text-features {
+    color: #434455;
+}
+
+/* section Projects */
+.projects {
+
+}
+
+.projects-list {
+    display: flex;
+}
+
+.projects-item {
+
+}
+
+/* section Team */
+
+.team {
+background-color: #F4F4FD;
+}
+
+.team-list {
+    display: flex;
+    text-align: center;
+}
+
+.team-item {
+    text-align: center;
+}
+
+
+/* footer */
+.endscreen {
+    background-color: #2E2F42;
+}
+
+.footer-text {
+    width: 264px;
+    height: 72px;
+}
+
+
+
 
 /* Portfolio buttom */
 
