@@ -1,8 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #434455; /*slate*/
+    --main-color-title: #2E2F42; /*navy blue*/
+    --background-color: #F4F4FD; /*cloud*/
+    --background-white:#ffffff; /*white*/
+    --button-color: #4D5AE5; /*iris*/
+    --button-color-inactive: #E7E9FC; /*CORNFLOWER*/
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    background-color: #FFFFFF;
-    color: #434455;
+    background-color: var(--background-white);
+    color: var(--main-color);
     letter-spacing: 0.02em;
 }
 
@@ -14,12 +30,12 @@ ul {
     list-style: none;
 }
 
-.nav-box {
+.navigation {
+    background-color: var(--background-white);
     display: flex;
 }
 
-.navigation {
-    background-color: #FFFFFF;
+.nav-box {
     display: flex;
 }
 
@@ -29,7 +45,7 @@ ul {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    color: #4D5AE5;;
+    color: var(--button-color);
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
@@ -38,10 +54,10 @@ ul {
 }
 
 .logo-black {
-    color: #2E2F42;
+    color: var(--main-color);
  }
  .logo-white {
-    color: #F4F4FD
+    color: var(--background-color);
  }
 
  .nav-menu {
@@ -55,13 +71,13 @@ ul {
 .nav-link {
     font-weight: 600;
     line-height: 1.5;
-    color: #2E2F42;
+    color: var(--main-color-title);
     text-decoration: none;
 }
 
 .addres {
     line-height: 1.5;
-    color: #434455;
+    color: var(--main-color);
     text-decoration: none;
 }
 
@@ -69,11 +85,11 @@ ul {
 .navigation .nav-link:hover,
 .navigation .addres:hover,
 .navigation .addres:focus {
-    color: #4D5AE5;
+    color: var(--button-color);
 }
 
 .hero {
-    background-color: #2E2F42;
+    background-color: var(--main-color);
 }
 
 .text-hero {
@@ -85,12 +101,11 @@ ul {
     width: 492px;
     height: 120px;
     text-align: center;
-
 }
 
 .button-hero {
     cursor: pointer;
-    background-color: #4D5AE5;
+    background-color: var(--button-color);
     display: flex;
     align-items: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -104,8 +119,8 @@ ul {
 
 .button-hero:focus,
 .button-hero:hover {
-    background-color:#434455;
-    color: #4D5AE5;
+    background-color:var(--button-color-inactive);
+    color: var(--button-color);
 }
 
 
@@ -122,7 +137,7 @@ display: flex;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--main-color-title);
 }
 
 /* hidden text */
@@ -146,19 +161,19 @@ display: flex;
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--main-color);
 }
 
 .text-item {
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
-    color: #2E2F42;
+    color: var(--main-color-title);
     text-transform: capitalize;
 }
 
 .text-features {
-    color: #434455;
+    color: var(--main-color);
 }
 
 /* section Projects */
@@ -177,7 +192,7 @@ display: flex;
 /* section Team */
 
 .team {
-background-color: #F4F4FD;
+background-color: var(--background-color);
 }
 
 .team-list {
@@ -193,7 +208,7 @@ background-color: #F4F4FD;
 
 /* footer */
 .endscreen {
-    background-color: #2E2F42;
+    background-color: var(--main-color);
 }
 
 .footer-text {
@@ -210,24 +225,9 @@ background-color: #F4F4FD;
 display: flex;
 } 
 
-/* .button-all {
-    background: #4D5AE5;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    font-weight: 600;
-    line-height: 1.5;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
-    cursor: pointer;
-} */
-
-
 .button-item {
-    background: #F4F4FD;
-    border: 1px solid #E7E9FC;
+    background: var(--background-color);
+    border: 1px solid var(--button-color-inactive);
     border-radius: 4px;
     font-weight: 600;
     font-size: 16px;
@@ -236,13 +236,13 @@ display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #4D5AE5;
+    color: var(--button-color);
     cursor: pointer;
 }
 
 .button-item:hover,
 .button-item:focus {
-    background-color: #4D5AE5;
+    background-color: var(--button-color);
     color: #FFFFFF;
 }
 
@@ -257,12 +257,13 @@ display: flex;
 
 .development-text {
     line-height: 1.5;
-    color: #434455;
+    color: var(--main-color);
 }
 
 
 
 .footer-text {
     line-height: 24px;
-    color: #E7E9FC;
+    color: var(--button-color-inactive);
 }
+
