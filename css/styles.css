@@ -10,7 +10,8 @@
     --background-color: #F4F4FD; /*cloud*/
     --background-white:#ffffff; /*white*/
     --button-color: #4D5AE5; /*iris*/
-    --button-color-inactive: #E7E9FC; /*CORNFLOWER*/
+    --button-color-border: #E7E9FC; /*CORNFLOWER*/
+    --buttom-color-click:#404BBF;/*dark iris*/
 }
 
 
@@ -32,11 +33,11 @@ ul {
 
 .navigation {
     background-color: var(--background-white);
-    display: flex;
+    /* display: flex; */
 }
 
 .nav-box {
-    display: flex;
+    /* display: flex; */
 }
 
 .logo {
@@ -59,7 +60,7 @@ ul {
  }
 
  .nav-menu {
-    display: flex;
+    /* display: flex; */
  }
 
  .nav-item {
@@ -100,6 +101,7 @@ ul {
     text-align: center;
 }
 
+/* Button Hero */
 .button-hero {
     cursor: pointer;
     background-color: var(--button-color);
@@ -117,10 +119,13 @@ ul {
 
 .button-hero:focus,
 .button-hero:hover {
-    /* background-color:var(--button-color-inactive);
-    color: var(--button-color); */
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.button-hero:active{
+    background: var(--buttom-color-click);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
 /* section Feature */
 .feature {
@@ -210,8 +215,8 @@ background-color: var(--background-color);
 }
 
 .footer-text {
-    line-height: 1, 5;
-    color: var(--button-color-inactive);
+    line-height: 1,5;
+    color: var(--button-color-border);
 }
 
 
@@ -226,7 +231,7 @@ background-color: var(--background-color);
 .button-item {
     cursor: pointer;
     background: var(--background-color);
-    border: 1px solid var(--button-color-inactive);
+    border: 1px solid var(--button-color-border);
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
