@@ -46,8 +46,6 @@ ul {
     font-size: 18px;
     line-height: 1.33;
     color: var(--button-color);
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
@@ -69,7 +67,7 @@ ul {
    }
 
 .nav-link {
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.5;
     color: var(--main-color-title);
     text-decoration: none;
@@ -93,13 +91,12 @@ ul {
 }
 
 .text-hero {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.08;
+    letter-spacing: 0.03em;
     color: #FFFFFF;
     text-transform: capitalize;
-    width: 492px;
-    height: 120px;
     text-align: center;
 }
 
@@ -110,17 +107,18 @@ ul {
     align-items: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.19;
+    letter-spacing: 0.04em;
     padding: 16px 32px;
     color: #FFFFFF;    
 }
 
 .button-hero:focus,
 .button-hero:hover {
-    background-color:var(--button-color-inactive);
-    color: var(--button-color);
+    /* background-color:var(--button-color-inactive);
+    color: var(--button-color); */
 }
 
 
@@ -156,7 +154,7 @@ display: flex;
 
 
 .text-section {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -165,7 +163,7 @@ display: flex;
 }
 
 .text-item {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
     color: var(--main-color-title);
@@ -182,7 +180,7 @@ display: flex;
 }
 
 .projects-list {
-    display: flex;
+    /* display: flex; */
 }
 
 .projects-item {
@@ -196,12 +194,12 @@ background-color: var(--background-color);
 }
 
 .team-list {
-    display: flex;
-    text-align: center;
+    /* display: flex; */
+    /* text-align: center; */
 }
 
 .team-item {
-    text-align: center;
+    /* text-align: center; */
     background-color: #FFFFFF;
 }
 
@@ -212,8 +210,8 @@ background-color: var(--background-color);
 }
 
 .footer-text {
-    width: 264px;
-    height: 72px;
+    line-height: 1, 5;
+    color: var(--button-color-inactive);
 }
 
 
@@ -222,28 +220,27 @@ background-color: var(--background-color);
 /* Portfolio buttom */
 
 .button-list {
-display: flex;
+    display: flex;
 } 
 
 .button-item {
+    cursor: pointer;
     background: var(--background-color);
     border: 1px solid var(--button-color-inactive);
     border-radius: 4px;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.04em;
     color: var(--button-color);
-    cursor: pointer;
 }
 
 .button-item:hover,
 .button-item:focus {
     background-color: var(--button-color);
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .developments-list {
@@ -262,8 +259,5 @@ display: flex;
 
 
 
-.footer-text {
-    line-height: 24px;
-    color: var(--button-color-inactive);
-}
+
 
