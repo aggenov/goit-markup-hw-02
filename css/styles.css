@@ -128,12 +128,12 @@ ul {
 }
 
 .feature-list {
-display: flex;
+/* display: flex; */
 }
 
 .feature-item {
     line-height: 1.5;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.02em;
     color: var(--main-color-title);
 }
@@ -157,7 +157,7 @@ display: flex;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    text-align: center;
+    /* text-align: center; */
     text-transform: capitalize;
     color: var(--main-color);
 }
@@ -244,12 +244,14 @@ background-color: var(--background-color);
 }
 
 .developments-list {
-    display: flex;
+    /* display: flex; */
 }
 
-.development-item {
-    text-align: center;
-    display: block;
+.development-item:hover,
+.development-item:focus {
+
+    /* text-align: center; */
+    /* display: block; */
 }
 
 .development-text {
